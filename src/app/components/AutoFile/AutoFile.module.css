@@ -1,0 +1,75 @@
+.autoFileContainer {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: flex-start;  
+  padding: 3rem;  
+  background-color: #f3f4f6; /* Use a light background color */  
+  border-radius: 15px; /* Rounded corners */  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */  
+}  
+
+.textContainer {  
+  flex: 1;  
+  max-width: 500px; /* Limit width for text */  
+  margin-right: 2rem; /* Space between text and table */  
+}  
+
+.title {  
+  font-size: 2rem; /* Title font size */  
+  color: #000; /* Title color */  
+  margin-bottom: 1rem; /* Space below the title */  
+}  
+
+.description {  
+  font-size: 1rem; /* Font size for description */  
+  color: #555; /* Text color for readability */  
+  margin-bottom: 2rem; /* Space below the description */  
+}  
+
+.learnMoreButton {  
+  padding: 0.8rem 1.5rem; /* Button padding */  
+  background-color: #000; /* Button background color */  
+  color: #fff; /* Button text color */  
+  border: none;  
+  border-radius: 8px; /* Rounded corners for button */  
+  cursor: pointer; /* Change cursor on hover */  
+  transition: background-color 0.3s; /* Smooth transition */  
+  font-size: 1rem; /* Button font size */  
+}  
+
+.learnMoreButton:hover {  
+  background-color: #333; /* Darker shade on hover */  
+}  
+
+.tableContainer {  
+  background-color: #e0f2fe; /* Light blue background for table */  
+  border-radius: 15px;  
+  padding: 1rem;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */  
+}  
+
+.tableTitle {  
+  font-size: 1.5rem;  
+  margin-bottom: 1rem;  
+  color: #000;  
+}  
+
+.table {  
+  width: 100%;  
+  border-collapse: collapse; /* Remove space between table cells */  
+}  
+
+.table th, .table td {  
+  padding: 0.75rem; /* Cell padding */  
+  text-align: left; /* Align text to the left */  
+  border-bottom: 1px solid #ccc; /* Bottom border for clarity */  
+}  
+
+.statusActive {  
+  color: #4caf50; /* Green for active status */  
+}  
+
+.statusInactive {  
+  color: #f44336; /* Red for inactive status */  
+  opacity: 0.7; /* Slightly faded */  
+}  

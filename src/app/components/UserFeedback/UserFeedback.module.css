@@ -1,0 +1,51 @@
+.userFeedbackContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color: #f9fafb; /* soft light background */
+  min-height: 300px;
+  position: relative;
+}
+
+.feedbackCard {
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  transition: all 0.5s ease;
+}
+
+.feedbackText {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #111827; /* dark text */
+  line-height: 1.6;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feedbackCard {
+    padding: 2rem;
+  }
+
+  .feedbackText {
+    font-size: 1.25rem;
+  }
+}

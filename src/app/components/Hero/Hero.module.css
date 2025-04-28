@@ -1,0 +1,129 @@
+/* src/app/components/Hero/Hero.module.css */  
+
+
+.heroContainer {  
+  display: flex;  
+  flex-direction: row; /* Side-by-side layout */  
+  justify-content: space-between; /* Space between text and image */  
+  align-items: center;  /* Center align items vertically */  
+  padding: 4rem 0 4rem 4rem; /* Increased padding for a more spacious layout */  
+  background: linear-gradient(180deg, rgba(214, 224, 255, 1) 0%, rgba(230, 240, 255, 1) 100%);
+}  
+
+.textContainer {  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: flex-start;  
+  align-items: flex-start; /* Align items to start on the left */  
+  opacity: 0.9;  
+  flex: 1; /* Allow this section to take available space */  
+  max-width: 50%; /* Limit width to prevent overflow */  
+  margin-left: 7rem;
+}  
+
+.heroTitle {  
+  text-align: left;   
+  color: rgba(0, 0, 0, 0.9); /* Dark color for the title */  
+  font-size: 5rem; /* Font size adjusted for a better look */  
+  font-weight: 700; /* Adjusted font weight */  
+  margin-bottom: 1rem; /* Spacing below the title */  
+}  
+
+.gradientText {  
+  background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 52.83%, rgba(34, 64, 171, 1) 100%);  
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  
+}  
+
+.heroDescription {  
+  text-align: left;  
+  margin-top: 10px;  
+  margin-bottom: 2rem;  
+  font-size: 1.25rem; /* Font size adjusted */  
+  color: rgba(0, 0, 0, 0.7); /* Slightly lighter color for description */  
+}  
+
+.signupButton {  
+  padding: 10px 20px;  
+  border: 1px solid rgba(255, 255, 255, 0.12);  
+  background-color: rgb(37, 37, 37); /* Button color changed to match */  
+  border-radius: 10px;  
+  color: white;  
+  text-decoration: none;  
+  display: inline-block;  
+  transition: background-color 0.3s;  
+  font-size: 1rem; /* Adjusted font size */  
+}  
+
+.signupButton:hover {  
+  background-color: rgba(30, 55, 145, 1); /* Darker blue on hover */  
+}  
+
+.imageContainer {  
+  position: relative;  
+  width: 30%; /* Adjusted width to fit the design better */  
+  max-width: 400px; 
+  margin-right: 10rem;
+}
+
+
+/* Responsive Design */  
+@media screen and (max-width: 768px) {  
+  .heroContainer {  
+    flex-direction: column;  
+    padding: 2rem 0;  
+    justify-content: center;  
+    align-items: center;  
+  }  
+
+  .textContainer {  
+    max-width: 100%;  
+    margin-left: 0;  
+    padding: 0 2rem;  
+    text-align: center;  
+  }  
+
+  .heroTitle {  
+    font-size: 2.5rem;  
+    text-align: center;  
+  }  
+
+  .heroDescription {  
+    font-size: 1rem;  
+    text-align: center;  
+    margin: 1rem 0;  
+  }  
+
+  .signupButton {  
+    padding: 8px 15px;  
+    font-size: 0.9rem;  
+    display: block;  
+    margin: 1rem auto;  
+  }  
+
+  .imageContainer {  
+    display: none; /* Hide image on mobile */  
+    width: 0;  
+    height: 0;  
+    margin: 0;  
+  }  
+}  
+
+@media screen and (max-width: 480px) {  
+  .heroContainer {  
+    padding: 1rem 0;  
+  }  
+
+  .heroTitle {  
+    font-size: 2rem;  
+  }  
+
+  .heroDescription {  
+    font-size: 0.9rem;  
+  }  
+
+  .signupButton {  
+    padding: 6px 12px;  
+    font-size: 0.8rem;  
+  }  
+} 

@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  background-color: #fff; /* white background */
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: #f4f4f5;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 9999px; /* fully rounded */
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  margin: 0 0 24px 0;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+  max-width: 600px;
+}

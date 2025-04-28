@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #f0f0f5 0%, #d9ddf2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  max-width: 800px;
+  margin-bottom: 4rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.featureContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.featureBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.featureDescription {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.learnMoreButton {
+  background: none;
+  border: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  font-size: 1rem;
+  position: relative;
+}
+
+.learnMoreButton::after {
+  content: '→';
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.learnMoreButton:hover::after {
+  transform: translateX(5px);
+}

@@ -1,0 +1,71 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contactInfo {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.rightSection {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.column li:hover {
+  text-decoration: underline;
+} 

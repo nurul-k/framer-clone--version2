@@ -1,0 +1,42 @@
+  .featuresContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .featureCard {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .featureCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .featureImage {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .featureTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .featureDescription {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.6;
+  }
